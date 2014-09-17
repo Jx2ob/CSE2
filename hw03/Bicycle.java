@@ -6,7 +6,7 @@
 //      javac Bicycle.java
 //  run the program
 //      java Bicycle
-
+//  Program takes information about the trip and spits out the distance traveled, time, and mph.
 //create scanner
 import java.util.Scanner;
 //define a class
