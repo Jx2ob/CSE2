@@ -1,5 +1,5 @@
 //JJ O'Brien
-//9/23/14
+//9/30/14
 //hw04-BoolaBoola java program
 //
 //Program randomly assigns values to three boleans and prompts the user to determine whether statement is true or false 
