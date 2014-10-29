@@ -1,6 +1,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 //JJ O'Brien
+//lab01
 //Hello World Java Program
+//
+//Program prints out "Hello World 2014!! surrounded by a box of #s
 //
 //  first compile the program
 //      javac HelloWorld.java
@@ -21,7 +24,7 @@ public class HelloWorld{
             System.out.println("#                      #");
             System.out.println("########################");
             System.out.println("########################");
-            System.out.println("testing");
+            System.out.println("test");
             
             //test/testtest
         }
