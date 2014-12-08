@@ -9,7 +9,7 @@
 //  run the program
 //      java MatrixSorter
 
-public class MatrixSorter{ 
+public class MatrixSorter{ //main method
   public static void main(String arg[]){                                       
     int mat3d[][][];
     mat3d = buildMat3d();
@@ -18,7 +18,7 @@ public class MatrixSorter{
     System.out.println("After sorting the 3rd matrix we get"); sort(mat3d[2]); show(mat3d);   
   }   
    
-   public static int[][][] buildMat3d(){
+   public static int[][][] buildMat3d(){//buildMat3d method
      int[][][] output = new int[3][][];
      for (int a=0; a<output.length; a++){
        output[a] = new int[3+2*a][];
@@ -29,10 +29,10 @@ public class MatrixSorter{
          }
        }
      }
-     return output;
+     return output;//return answer
    }
    
-   public static void show(int[][][] input){
+   public static void show(int[][][] input){//show method
      for(int a=0; a< input.length; a++){
        System.out.println("---------------------------Slab " + (a+1));
        for(int b=0; b<input[a].length; b++){
@@ -44,7 +44,7 @@ public class MatrixSorter{
      }
    }
    
-   public static int findMin(int[][][] input){
+   public static int findMin(int[][][] input){//findMin method
      int minimum = 101;
      for(int a=0; a<input.length; a++){
        for(int b=0;b<input[a].length; b++){
@@ -53,10 +53,10 @@ public class MatrixSorter{
          }
        }
      }
-     return minimum;
+     return minimum;//return answer
    }
    
-   public static void sort(int[] input){
+   public static void sort(int[] input){//sort method
      for(int a=0; a<input.length; a++){
        int place = a;
        for(int b=a; b<input.length; b++){
@@ -70,7 +70,7 @@ public class MatrixSorter{
      }
    }
    
-   public static void sort(int[][] input){
+   public static void sort(int[][] input){//sort method double array
      for (int b=0; b<input.length; b++)sort(input[b]);
      for(int a=0; a<input.length; a++){                                         
        for(int b=a; b>0; b--){
@@ -80,7 +80,7 @@ public class MatrixSorter{
            input[b] = temp;
          }
          else{
-          break;
+          break;//end
          }
         }
      }
